@@ -7,7 +7,7 @@ import Header from "../../components/Header";
 const Form = () => {
   const isNonMobile = useMediaQuery("(min-width:600px)");
 
-  const phoneRegx = /^(\+91[\-\s]?)?[0]?(91)?[789]\d{9}$/;
+  const phoneRegx = /^(?:\+91[-\s]?)?(?:0)?[789]\d{9}$/;
 
   const validationSchema = yup.object().shape({
     firstName: yup.string().required("FirstName is Required"),

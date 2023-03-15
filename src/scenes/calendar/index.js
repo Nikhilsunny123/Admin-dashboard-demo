@@ -17,7 +17,6 @@ import {
 } from "@mui/material";
 import Header from "../../components/Header";
 import { tokens } from "../../theme";
-import { borderRadius } from "@mui/system";
 
 const Calendar = () => {
   const theme = useTheme();
